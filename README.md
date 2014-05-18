@@ -1,24 +1,18 @@
-libCalabash
------------
+## The Calabash iOS Server
 
-For general information about Calabash see [Calaba.sh](http://calaba.sh).
+http://calaba.sh
 
-# Building libCalabash
+The companion of the calabash-ios gem:  https://github.com/calabash/calabash-ios
 
-Clone this repo and checkout the master branch.
+### Building the Framework
 
-Update git submodules
+```
+$ make
+```
 
-    git submodule update --init --recursive
+or from the calabash-ios/calabash-cucumber directory:
 
-Run
-
-    rake
-
-to build the library.
-
-## Branches
-
-The branch calabash-ios-server is used for Calabash iOS 0.9.x.
-
-Please refer to the readme of this branch for instructions on how to build that.
+```
+# see the calabash-ios/calabash-cucumber/Rakefile for details
+$ rake build_server
+```

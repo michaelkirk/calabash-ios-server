@@ -1,12 +1,12 @@
 //
 //  NoContentResponse.h
 //  Created by Karl Krukow on 15/08/11.
-//  Copyright 2011 Xamarin. All rights reserved.
+//  Copyright 2011 LessPainful. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "HTTPResponse.h"
+#import "LPHTTPResponse.h"
 
-@interface LPNoContentResponse : NSObject<HTTPResponse>
+@interface LPNoContentResponse : NSObject <LPHTTPResponse>
 
 @end

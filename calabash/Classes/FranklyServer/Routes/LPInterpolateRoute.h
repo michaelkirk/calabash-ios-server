@@ -3,7 +3,7 @@
 //  LPSimpleExample
 //
 //  Created by Karl Krukow on 14/03/12.
-//  Copyright (c) 2012 Xamarin. All rights reserved.
+//  Copyright (c) 2012 LessPainful. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,12 +11,12 @@
 #import "LPHTTPResponse.h"
 #import "LPGenericAsyncRoute.h"
 
-@interface LPInterpolateRoute : LPGenericAsyncRoute
-{    
-    NSArray *_events;
+@interface LPInterpolateRoute : LPGenericAsyncRoute {
+  NSArray *_events;
 }
 
-@property (nonatomic, retain) NSArray *events;
-@property (nonatomic, retain) UIScriptParser *parser1;
-@property (nonatomic, retain) UIScriptParser *parser2;
+@property(nonatomic, retain) NSArray *events;
+@property(nonatomic, retain) UIScriptParser *parser1;
+@property(nonatomic, retain) UIScriptParser *parser2;
+
 @end

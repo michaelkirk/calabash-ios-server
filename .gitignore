@@ -1,5 +1,11 @@
 calabash.xcodeproj/project.xcworkspace/xcuserdata
 calabash.xcodeproj/xcuserdata/
+*.xccheckout
 Markdown.pl
-dist
 build
+calabash.framework
+
+!scripts/test/build
+
+# AppCode
+.idea

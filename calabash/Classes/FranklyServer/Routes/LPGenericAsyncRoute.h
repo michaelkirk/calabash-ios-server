@@ -3,33 +3,32 @@
 //  calabash
 //
 //  Created by Karl Krukow on 29/01/12.
-//  Copyright (c) 2012 Xamarin. All rights reserved.
+//  Copyright (c) 2012 LessPainful. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "RequestRouter.h"
-#import "HTTPResponse.h"
-#import "HTTPConnection.h"
+#import "LPRoute.h"
+#import "LPHTTPResponse.h"
 
-@interface LPGenericAsyncRoute : NSObject<Route,HTTPResponse>
-{    
-    BOOL _done;
-    HTTPConnection *_conn;
-    NSDictionary *_data;
-    NSDictionary *_jsonResponse;
-    volatile NSData *_bytes;
-    
+@interface LPGenericAsyncRoute : NSObject <LPRoute, LPHTTPResponse> {
+  BOOL _done;
+  LPHTTPConnection *_conn;
+  NSDictionary *_data;
+  NSDictionary *_jsonResponse;
+  NSData *_bytes;
 }
 
-@property (nonatomic, assign) volatile BOOL done;
-@property (nonatomic, assign) HTTPConnection *conn;
-@property (nonatomic, retain) NSDictionary *data;
-@property (nonatomic, retain) NSDictionary *jsonResponse;
+@property(nonatomic, assign) BOOL done;
+@property(nonatomic, assign) LPHTTPConnection *conn;
+@property(nonatomic, retain) NSDictionary *data;
+@property(nonatomic, retain) NSDictionary *jsonResponse;
 
--(void)beginOperation;
-- (BOOL)isDone;
--(BOOL)matchesPath:(NSArray *)path;
--(void)failWithMessageFormat:(NSString *)messageFmt message:(NSString *)message;
--(void)succeedWithResult:(NSArray *)result;
+- (void) beginOperation;
+
+- (BOOL) isDone;
+
+- (void) failWithMessageFormat:(NSString *) messageFmt message:(NSString *) message;
+
+- (void) succeedWithResult:(NSArray *) result;
 
 
 @end
