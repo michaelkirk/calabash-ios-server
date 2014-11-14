@@ -20,6 +20,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		45B65E9B1A155E24006FA613 /* LPWebQueryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B65E9A1A155E24006FA613 /* LPWebQueryTest.m */; };
+		45B65E9D1A15611D006FA613 /* webview-scaffold.html in Resources */ = {isa = PBXBuildFile; fileRef = 45B65E9C1A15611D006FA613 /* webview-scaffold.html */; };
 		B1058DEF197F00C000B4A57B /* LPWebQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B1914DB8159C228500CB928D /* LPWebQuery.m */; settings = {COMPILER_FLAGS = "-Wno-unreachable-code"; }; };
 		B1058E08197F00C000B4A57B /* LPUIAUserPrefsChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F279AE183D5B3000A922BC /* LPUIAUserPrefsChannel.m */; };
 		B1058E1D197F00C000B4A57B /* UIScriptASTPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E3603914D9F4B30087D8D9 /* UIScriptASTPredicate.m */; };
@@ -658,6 +660,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		45B65E9A1A155E24006FA613 /* LPWebQueryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPWebQueryTest.m; sourceTree = "<group>"; };
+		45B65E9C1A15611D006FA613 /* webview-scaffold.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "webview-scaffold.html"; sourceTree = "<group>"; };
 		5BFF97A218B391810094E71E /* LPCollectionViewScrollToItemWithMarkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCollectionViewScrollToItemWithMarkOperation.h; sourceTree = "<group>"; };
 		5BFF97A318B391810094E71E /* LPCollectionViewScrollToItemWithMarkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCollectionViewScrollToItemWithMarkOperation.m; sourceTree = "<group>"; };
 		5BFF97A618B392370094E71E /* LPScrollToMarkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPScrollToMarkOperation.h; sourceTree = "<group>"; };
@@ -1355,6 +1359,7 @@
 				F50CBF781A03F9FF004AC9DA /* LPTouchUtilsTest.m */,
 				F50CBF601A03F222004AC9DA /* Supporting Files */,
 				F50CBFD01A040788004AC9DA /* tests.pch */,
+				45B65E9A1A155E24006FA613 /* LPWebQueryTest.m */,
 			);
 			path = "calabash-ios-server-tests";
 			sourceTree = "<group>";
@@ -1365,6 +1370,7 @@
 				F50CBF761A03F69A004AC9DA /* LPOCMockTest.m */,
 				F50CBF691A03F5AA004AC9DA /* OCMock-3.1.1 */,
 				F50CBF611A03F222004AC9DA /* Info.plist */,
+				45B65E9C1A15611D006FA613 /* webview-scaffold.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1703,6 +1709,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B65E9D1A15611D006FA613 /* webview-scaffold.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2320,6 +2327,7 @@
 				F50CBF9F1A040599004AC9DA /* LPCollectionViewScrollToItemWithMarkOperation.m in Sources */,
 				F50CBFB81A0405CE004AC9DA /* LPCJSONSerializer.m in Sources */,
 				F50CBF7A1A040511004AC9DA /* LPTouchUtils.m in Sources */,
+				45B65E9B1A155E24006FA613 /* LPWebQueryTest.m in Sources */,
 				F50CBFAC1A0405B2004AC9DA /* LPMapRoute.m in Sources */,
 				F50CBFC01A0405CE004AC9DA /* UIScriptASTFirst.m in Sources */,
 				F50CBFBD1A0405CE004AC9DA /* UIScriptASTALL.m in Sources */,
